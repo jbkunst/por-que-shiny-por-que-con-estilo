@@ -25,7 +25,7 @@ editor_options:
 # { data-background="img/data-culture.jpg"}
 
 ```{r, include = FALSE}
-# source("R/setup.R")
+source("R/setup.R")
 ```
 
 ## ¿Que haremos?
@@ -40,7 +40,7 @@ editor_options:
 ## ¿Qué es shiny?
 
 > - Es un paquete para construir aplicaciones web usando solamente
-código `r jbkmisc::R()`
+código `r R()`
 > - De forma __fácil__<span class="fragment">. Sin aprender `HTML`</span><span class="fragment">, `Javascript`</span><span class="fragment"> o `CSS`</span>
 
 
@@ -67,3 +67,7 @@ server <- function(input, output) {
    })
 }
 ```
+
+## ¿Cómo luce una _shiny-app_ funcionando?
+
+
