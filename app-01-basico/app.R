@@ -14,7 +14,7 @@ ui <- fluidPage(
 server <- function(input, output) {
    output$outplot <- renderPlot({
      x <- rnorm(input$nrandom)
-     plot(cumsum(x), type = input$type)
+     plot(cumsum(x)/seq(length(x)), type = input$type)
    })
 }
 
