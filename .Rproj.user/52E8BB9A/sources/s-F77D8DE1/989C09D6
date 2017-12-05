@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1511918097108.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "989C09D6",
+    "lastKnownWriteTime" : 1511918115,
+    "last_content_update" : 1511918115152,
+    "path" : "D:/Dev/r-material/201712-porque-shiny/R/setup.R",
+    "project_path" : "R/setup.R",
+    "properties" : {
+        "cursorPosition" : "9,3",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
