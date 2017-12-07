@@ -3,9 +3,10 @@ library(shiny)
 ui <- fluidPage(
    sidebarLayout(
       sidebarPanel(
-         sliderInput("nrandom", "N a simular:",
-                     min = 1, max = 50, value = 30),
-         selectInput("type", "Tipo:", choices = c("p", "l", "b"))
+        sliderInput("nrand", "Simulaciones",
+                    min = 50, max = 100, value = 70),
+        selectInput("col", "Color", c("red", "blue", "black")),
+        checkboxInput("punto", "Puntos:", value = FALSE)
       ),
       mainPanel(plotOutput("outplot"))
    )
@@ -13,8 +14,10 @@ ui <- fluidPage(
 
 server <- function(input, output) {
    output$outplot <- renderPlot({
-     x <- rnorm(input$nrandom)
-     plot(cumsum(x)/seq(length(x)), type = input$type)
+     set.seed(123)
+     x <- rnorm(input$nrand)
+     t <- ifelse(input$punto, "b", "l")
+     plot(x, type = t, col = input$col)
    })
 }
 
