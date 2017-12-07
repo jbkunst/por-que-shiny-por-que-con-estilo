@@ -22,3 +22,4 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
+# runApp("app-01-basico/", launch.browser = TRUE, display.mode = "showcase")
